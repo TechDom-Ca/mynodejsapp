@@ -14,16 +14,16 @@ app.get("/getCall", function(req,res){
 console.log("GET Method caled");
 console.log(__dirname);
 
-res.send("<h2>Welcome to Node JS express app</h2>"+appEnv.url+appEnv.port+port+process.env.LOGNAME);
+res.send("<h2>This is NodeJS at its best</h2>"+appEnv.url+appEnv.port+port+process.env.LOGNAME);
 
 }).listen(9009);
-console.log(__dirname+"/images/techdomlogo.jpg");
+console.log(__dirname+"/images/techdomlogo.png");
 */
 app.get('/techdom', function(request, response) {
-    //response.send("<h2><center>Welcome to NodeJS app</h2>");
-    response.write("<h2><center><u>NodeJS  Application </u></center></h2>");
+    //response.send("<h2><center>This is a NodeJS App facilitated by TechDom</h2>");
+    response.write("<h2><center><u>NodeJS  Application by TechDom </u></center></h2>");
 	
-    response.write("<h2><center>Welcome to  TechDom. You may contact us via email at info@techdom.ca <center></h2>" );
+    response.write("<h2><center>Welcome to  TechDom.Ca. You may email us at info@techdom.ca <center></h2>" );
     response.end();
     
   })
@@ -33,7 +33,7 @@ app.get('/techdom', function(request, response) {
 app.get("/html", function(req,res){
     res.set("Content-Type","text/html");
     //res.contentType("html") ; 
-    res.write("<h2>Welcome...</h2>");
+    res.write("<h2>Welcome to TechDom.Ca</h2>");
     res.write("<h2>/html call</h2>");
     //must end 
     res.end();
@@ -45,7 +45,7 @@ app.get("/html", function(req,res){
         //res.json({'name': 'Ademola Olaoti'});
         res.send({
 		'name': 'TechDom',
-		'technology': 'IT',
+		'technology': 'ITWholesaler',
 		'contact' : '+17053500801',
 		'email': 'info@techdom.ca'
 	            });
@@ -77,4 +77,4 @@ app.get('/redirect', function(req, res) {
     app.listen(app.get('port'), function() {
         console.log("Node JS app is running at http://localhost:" + app.get('port') +"/techdom");
       })
- 
+   
