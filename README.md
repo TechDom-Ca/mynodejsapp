@@ -1,10 +1,13 @@
-# mynodeapp
+# mynodeJSapp
 
 To start this application first you can get this repo code using below url
 
-git clone https://github.com/ygirl2324/mynodeapp.git
+git clone https://github.com/TechDom-Ca/mynodejsapp.git
 
-cd mynodeapp
+
+***After installing npm and nodejs on the command line, run "npm login" or "npm adduser"***
+
+cd mynodejsapp
 
 npm install
 
@@ -28,7 +31,7 @@ node sonar-project.js
 
 Generate the Nexus token by using base64 encoding as follows.
 
-echo -n 'admin:password' | openssl base64
+echo -n 'admin:$password' | openssl base64
 
 Create a .npmrc file in your project root directory and add below lines.
 
@@ -42,7 +45,7 @@ In package.json add below entry,
 
 "publishConfig": {
 
-"registry": "http://IPAddress:8081/repository/nodejs-techdom/"
+"registry": "http://IPAddress:8081/repository/nodejs-repo/"
 
 }
 
@@ -52,4 +55,3 @@ Execute below command to upload packages to nexus repo.
 
 npm publish
   
-
