@@ -2,9 +2,9 @@
 
 To start this application first you can get this repo code using below url
 
-git clone https://github.com/MithunTechnologiesDevOps/nodejs-app-mss.git
+git clone https://github.com/ygirl2324/mynodeapp.git
 
-cd nodejs-app-mss
+cd mynodeapp
 
 npm install
 
