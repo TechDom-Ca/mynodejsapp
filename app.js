@@ -17,13 +17,13 @@ console.log(__dirname);
 res.send("<h2>Welcome to Node JS express app</h2>"+appEnv.url+appEnv.port+port+process.env.LOGNAME);
 
 }).listen(9009);
-console.log(__dirname+"/images/mithunlogo.jpg");
+console.log(__dirname+"/images/techdomlogo.jpg");
 */
-app.get('/mithuntechnologies', function(request, response) {
-    //response.send("<h2><center>Welcome to Node JS app</h2>");
-    response.write("<h2><center><u>Node JS  Application </u></center></h2>");
+app.get('/techdom', function(request, response) {
+    //response.send("<h2><center>Welcome to NodeJS app</h2>");
+    response.write("<h2><center><u>NodeJS  Application </u></center></h2>");
 	
-    response.write("<h2><center>Welcome to  Mithun Technologies. Please Contact +91-9980923226,++91-9980923216 for more information or send an email to devopstrainingblr@gmail.com <center></h2>" );
+    response.write("<h2><center>Welcome to  TechDom. You may contact us via email at info@techdom.ca <center></h2>" );
     response.end();
     
   })
@@ -33,7 +33,7 @@ app.get('/mithuntechnologies', function(request, response) {
 app.get("/html", function(req,res){
     res.set("Content-Type","text/html");
     //res.contentType("html") ; 
-    res.write("<h2>Welcome Docker</h2>");
+    res.write("<h2>Welcome...</h2>");
     res.write("<h2>/html call</h2>");
     //must end 
     res.end();
@@ -42,12 +42,12 @@ app.get("/html", function(req,res){
     app.get("/jsonData", function(req,res){
         res.type('json');
         //res.type('application/json');
-        //res.json({'name': 'Mithun Reddy L'});
+        //res.json({'name': 'Ademola Olaoti'});
         res.send({
-		'name': 'Mithun Technologies',
-		'technology': 'DevOps',
-		'contact' : '9980923226',
-		'email': 'devopstrainingblr@gmail.com'
+		'name': 'TechDom',
+		'technology': 'IT',
+		'contact' : '+17053500801',
+		'email': 'info@techdom.ca'
 	            });
         
         });
@@ -70,15 +70,11 @@ app.get("/status-code-500", function(req, res) {
 
 app.get('/redirect', function(req, res) {
     //Send status 300
-        res.redirect('http://mithuntechnologies.com');
+        res.redirect('http://techdom.ca');
     });
     
  
     app.listen(app.get('port'), function() {
-        console.log("Node JS app is running at http://localhost:" + app.get('port') +"/mithuntechnologies");
+        console.log("Node JS app is running at http://localhost:" + app.get('port') +"/techdom");
       })
-    
-
-
-
-
+ 
