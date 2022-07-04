@@ -42,7 +42,7 @@ In package.json add below entry,
 
 "publishConfig": {
 
-"registry": "http://IPAddress:8081/repository/nodejs-mithuntechnologies/"
+"registry": "http://IPAddress:8081/repository/nodejs-techdom/"
 
 }
 
