@@ -28,7 +28,7 @@ node sonar-project.js
 
 Generate the Nexus token by using base64 encoding as follows.
 
-echo -n 'admin:passw0rd' | openssl base64
+echo -n 'admin:password' | openssl base64
 
 Create a .npmrc file in your project root directory and add below lines.
 
