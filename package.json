@@ -26,13 +26,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MithunTechnologies/node-js-application"
+    "url": "https://github.com/TechDom-Ca/mynodejsapp"
   },
   "keywords": [
     "node",
-    "Mithun Technologies",
+    "TechDom-Ca",
     "express"
   ],
-  "author": "Mithun Reddy Lacchannagari",
-  "license": "MIT"
+  "author": "Ademola Olaoti",
+  "license": "TechDom-Ca"
 }
