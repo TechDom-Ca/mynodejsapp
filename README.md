@@ -1,57 +1,54 @@
 # mynodeJSapp
 
-To start this application first you can get this repo code using below url
-
-git clone https://github.com/TechDom-Ca/mynodejsapp.git
-
-
-***After installing npm and nodejs on the command line, run "npm login" or "npm adduser"***
-
-cd mynodejsapp
-
-npm install
-
-**node app.js**
-
-(OR) 
-
-npm start
-
-To execute Test cases, we will run the below command
-npm test
-
-To Execute the SonarQube Repor, execute the below command.
-
-npm run sonar
-
-(OR) 
-
-node sonar-project.js
+### The first step to getting this code is to clone it by running the command below:
+- git clone https://github.com/TechDom-Ca/mynodejsapp.git
+- You need to have ***git*** installed on the server
 
 
-Generate the Nexus token by using base64 encoding as follows.
+### Install npm or nodejs, then run either of the following:
+- npm login 
+- npm adduser
 
-echo -n 'admin:$password' | openssl base64
+### Once you have npm or nodejs installed, run the following commands:
+- cd mynodejsapp
+- npm install
 
-Create a .npmrc file in your project root directory and add below lines.
+### Start the application by running either of the following:
+- node app.js
+- npm start
 
-registry=<<NexusRepoURL>>
-_auth=<<Token>>
-email=<<EmailID>>
-always-auth=true
+### To run test cases, run:
+- npm test
+
+### To generate a SonarQube report, run either of the following:
+- npm run sonar
+- node sonar-project.js
+
+### To generate a Nexus token using base64 encoding:
+- echo -n 'admin:enterYourPassword' | openssl base64
+
+### Create a .npmrc file in the project root directory and add the following lines:
+
+  registry=<<NexusRepoURL>>
+  _auth=<<Token>>
+  email=<<EmailID>>
+  always-auth=true
 
 
-In package.json add below entry,
+### In package.json, add the following entry:
 
-"publishConfig": {
+  "publishConfig": {
+  "registry": "http://IPAddress:8081/repository/nodejs-repo/"
+  }
 
-"registry": "http://IPAddress:8081/repository/nodejs-repo/"
-
-}
-
-  npm login --registry=NexusRepoURL
+### Then, run the following command to login to the Nexus repository:
+- npm login --registry=NexusRepoURL
   
-Execute below command to upload packages to nexus repo.
+### Finally, use this command to upload packages to the Nexus repository:
+- npm publish
+
+
+
 
 npm publish
   
