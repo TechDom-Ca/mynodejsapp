@@ -9,7 +9,7 @@
 - npm login 
 - npm adduser
 
-### Once you have npm or nodejs installed, run the following commands:
+### Once you have npm or nodejs installed, run the following commands to do a build:
 - cd mynodejsapp
 - npm install
 
