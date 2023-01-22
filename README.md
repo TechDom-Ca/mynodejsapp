@@ -27,7 +27,8 @@
 ### To generate a Nexus token using base64 encoding:
 - echo -n 'admin:enterYourPassword' | openssl base64
 
-### Create a .npmrc file in the project root directory and add the following lines:
+### Create and update the *.npmrc* file in the project root directory 
+Add the following lines:
 
   registry=<<NexusRepoURL>>
   _auth=<<Token>>
@@ -35,7 +36,8 @@
   always-auth=true
 
 
-### In package.json, add the following entry:
+### Update the *package.json* file 
+Add the following entr
 
   "publishConfig": {
   "registry": "http://IPAddress:8081/repository/nodejs-repo/"
@@ -47,8 +49,4 @@
 ### Finally, use this command to upload packages to the Nexus repository:
 - npm publish
 
-
-
-
-npm publish
   
