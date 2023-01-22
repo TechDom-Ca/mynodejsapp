@@ -30,18 +30,18 @@
 ### Create and update the *.npmrc* file in the project root directory 
 Add the following lines:
 
-  registry=<<NexusRepoURL>>
-  _auth=<<Token>>
-  email=<<EmailID>>
-  always-auth=true
+     registry=<<NexusRepoURL>>
+     _auth=<<Token>>
+     email=<<EmailID>>
+     always-auth=true
 
 
 ### Update the *package.json* file 
-Add the following entr
+Add the following entry:
 
-  "publishConfig": {
-  "registry": "http://IPAddress:8081/repository/nodejs-repo/"
-  }
+     "publishConfig": {
+     "registry": "http://IPAddress:8081/repository/nodejs-repo/"
+     }
 
 ### Then, run the following command to login to the Nexus repository:
 - npm login --registry=NexusRepoURL
